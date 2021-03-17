@@ -72,6 +72,11 @@ namespace pirometr
             }
         }
 
+        /// <summary>
+        /// конвертируем полученные хекс стринг в флоут
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         static float ConvertStrHexToFloat(string data)
         {
             uint num = uint.Parse(data, System.Globalization.NumberStyles.AllowHexSpecifier);
